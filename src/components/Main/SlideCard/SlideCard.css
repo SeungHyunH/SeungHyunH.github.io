@@ -1,0 +1,83 @@
+.slideCard{
+  grid-column: 1/4;
+  grid-row: 1/3;
+  background-color: #1D1F24;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #FFF;
+  white-space: pre-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+.slideCardPrev{
+  width: 50px;
+  height: 50px;
+  background-color: #1D1F24;
+  position: absolute;
+  left: 0;
+  top: 274px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slideCardNext{
+  width: 50px;
+  height: 50px;
+  background-color: #1D1F24;
+  position: absolute;
+  right:0;
+  top: 274px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slideCardCategory{
+  position: absolute;
+  background-color: #FF565C;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  top: 137px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 24px;
+}
+.slideCardMain{
+  position: absolute;
+  top: 207px;
+  display: flex;
+  flex-direction: column;
+  height: 286px;
+  white-space: pre-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.slideCardTitle{
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+}
+.slideCardContent{
+  font-weight: 400;
+  font-size: 18px;
+}
+.slideCardFooter{
+  position: absolute;
+  display: flex;
+  bottom: 25px;
+  font-size: 13px;
+}
+.slideCardFooter img{
+  padding-right: 10px;
+}
+
+.slideCardFooter>div{
+  display: flex;
+  padding-right: 15px;
+}

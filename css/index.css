@@ -1,0 +1,110 @@
+@charset "utf-8";
+@font-face {
+  font-family: "MAZIUS REVIEW 20.09 Regular";
+  src: url("https://db.onlinewebfonts.com/t/7e5d4b5e37c0623759cbed868eb8c2ba.eot");
+  src: url("https://db.onlinewebfonts.com/t/7e5d4b5e37c0623759cbed868eb8c2ba.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/7e5d4b5e37c0623759cbed868eb8c2ba.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/7e5d4b5e37c0623759cbed868eb8c2ba.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/7e5d4b5e37c0623759cbed868eb8c2ba.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/7e5d4b5e37c0623759cbed868eb8c2ba.svg#MAZIUS REVIEW 20.09 Regular")format("svg");
+}
+@font-face {
+  font-family: "Avenir Next LT Pro Regular";
+  src: local("Avenir Next LT Pro Regular"), url("/font/Avenir Next LT Pro Regular.otf") format("opentype")
+}
+@font-face {
+  font-family: "NeturalFace";
+  src: local("NeturalFace"), url("/font/NeturalFace.otf") format("opentype")
+}
+@font-face {
+  font-family: "NeturalFace-Bold";
+  src: local("NeturalFace-Bold"), url("/font/NeturalFace-Bold.otf") format("opentype")
+}
+
+/* ROOT */
+:root {
+  --bg-color:#0E1010;
+  --text-color:#FFFFFF;
+  --point-color : #272D2B;
+}
+
+/* reset */
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Avenir Next LT Pro Regular";
+}
+body {
+  margin: 0;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+h1 {
+  font-weight: normal;
+  margin: 0;
+}
+dl,
+dd,
+p {
+  margin: 0;
+}
+button,
+input {
+  appearance: none;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+	border-radius: 0;
+}
+button {
+  cursor: pointer;
+}
+em {
+  font-style: normal;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+img {
+  vertical-align: top;
+}
+fieldset {
+  border: 0 none;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* 공통 */
+.hidden_txt,
+legend {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0;
+  color: rgba(0, 0, 0, 0);
+}
+.hide {
+  display: none !important;
+}
+
+/* 레이아웃 */
+
+
+/* header */
+
+/* footer */

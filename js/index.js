@@ -4,10 +4,8 @@ const gnb = document.querySelector(".gnb");
 const init = ()=> {
   if( window.matchMedia('(min-width:769px)').matches ){
     btnViewMenu.classList.add('hide');
-    gnb.classList.remove('hide');
   }else{
     btnViewMenu.classList.remove('hide');
-    gnb.classList.add('hide');
   }
 }
 
@@ -18,9 +16,13 @@ window.addEventListener('click',e =>{
     if(openMenu.classList[1]==="close"){
       openMenu.classList.remove("close");
       openMenu.classList.add("open");
+      gnb.classList.remove("close");
+      gnb.classList.add("open");
     }else{
       openMenu.classList.remove("open");
       openMenu.classList.add("close");
+      gnb.classList.add("close");
+      gnb.classList.remove("open");
     }
   }
 });
@@ -28,10 +30,8 @@ window.addEventListener('click',e =>{
 window.addEventListener('resize',e =>{
   if( window.matchMedia('(min-width:769px)').matches ){
     btnViewMenu.classList.add('hide');
-    gnb.classList.remove('hide');
   }else{
     btnViewMenu.classList.remove('hide');
-    gnb.classList.add('hide');
   }
 });
 

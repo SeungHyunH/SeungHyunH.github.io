@@ -154,9 +154,53 @@ body{
 .btn_open_menu{
   width: 9.1rem;
   height: 100%;
-  position: relative;
   overflow: hidden;
-  background-color: red;
+  gap: 2rem;
+  position: relative;
+}
+
+
+.btn_open_menu.open::before{
+  margin-top: 0;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  transform: translate(-50%, -50%) rotateZ(45deg);
+}
+.btn_open_menu.open::after{
+  margin-top: 0;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  transform: translate(-50%, -50%) rotateZ(-45deg);
+}
+.btn_open_menu.open span{
+  width: 0;
+}
+
+.btn_open_menu:before{
+  margin-top: -1rem;
+}
+.btn_open_menu:after {
+  margin-top: 1rem;
+}
+.btn_open_menu:before,
+.btn_open_menu:after {
+  will-change: transform, margin-top;
+  transition-property: transform, margin-top;
+  transition-duration: 150ms;
+  transition-timing-function: ease-out;
+  transform: translate(-50%, -50%) rotateZ(0);
+}
+.btn_open_menu:before,
+.btn_open_menu:after,
+.btn_open_menu span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: "";
+  width: 3.8rem;
+  height: 0.2rem;
+  background-color: var(--text-color);
+  transform: translate(-50%, -50%);
 }
 
 /* footer */

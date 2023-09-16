@@ -1,4 +1,3 @@
-@charset "utf-8";
 @font-face {
   font-family: "MAZIUS REVIEW 20.09 Regular";
   src: url("https://db.onlinewebfonts.com/t/7e5d4b5e37c0623759cbed868eb8c2ba.eot");
@@ -10,15 +9,15 @@
 }
 @font-face {
   font-family: "Avenir Next LT Pro Regular";
-  src: local("Avenir Next LT Pro Regular"), url("/font/Avenir Next LT Pro Regular.otf") format("opentype")
+  src: local("Avenir Next LT Pro Regular"), url("../font/Avenir Next LT Pro Regular.otf") format("opentype")
 }
 @font-face {
   font-family: "NeturalFace";
-  src: local("NeturalFace"), url("/font/NeturalFace.otf") format("opentype")
+  src: local("NeturalFace"), url("../font/NeutralFace.otf") format("opentype")
 }
 @font-face {
   font-family: "NeturalFace-Bold";
-  src: local("NeturalFace-Bold"), url("/font/NeturalFace-Bold.otf") format("opentype")
+  src: local("NeturalFace-Bold"), url("../font/NeutralFace-Bold.otf") format("opentype")
 }
 
 /* ROOT */
@@ -72,6 +71,7 @@ em {
 a {
   text-decoration: none;
   cursor: pointer;
+  color: var(--text-color);
 }
 a:hover,
 a:focus {
@@ -107,19 +107,24 @@ body{
   padding-top: 9.1rem;
 }
 
-.header,.footer,.main_container{
+.main_container{
   max-width: 144rem;
   margin: 0 auto;
 }
 
 .header{
+  box-sizing: border-box;
   width: 100%;
   height: 9.1rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: fixed;
   top: 0;
   left: 0;
+  padding-left: 4.675rem;
+  padding-right: 3.475rem;
+  border-bottom: var(--point-color) 1px solid;
   z-index: 10;
 }
 
@@ -132,5 +137,26 @@ body{
 }
 
 /* header */
+.logo{
+  background-image: url("../img/Logo.svg");
+  background-repeat: no-repeat;
+  width: 22.9rem;
+  height: 5.4rem;
+}
+
+.gnb ul{
+  display: flex;
+  gap: 6rem;
+  font-family: "NeturalFace";
+  font-size: 1.8rem;
+}
+
+.btn_open_menu{
+  width: 9.1rem;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: red;
+}
 
 /* footer */

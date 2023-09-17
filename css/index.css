@@ -204,7 +204,36 @@ body{
   transform: translate(-50%, -50%);
 }
 
+/* footer */
+.footer{
+  border-top: 0.1rem solid var(--point-color);
+  padding-bottom: 5.2rem;
+}
+.footer ul{
+  font-family: "NeturalFace";
+  display: flex;
+  font-size: 1.8rem;
+  gap: 8.2rem;
+  padding: 3.6rem 0;
+}
+.footer p{
+  font-size: 1.8rem;
+}
+
+/* Labtop */
+@media screen and (max-width : 1024px) {
+  /* footer */
+  .footer ul{
+    font-size: 1.6rem;
+  }
+  .footer p{
+    font-size: 1.6rem;
+  }
+}
+
+/* 태블릿 */
 @media screen and (max-width : 768px) {
+  /* header */
   .logo{
     width: 15.3rem;
     height: 3.6rem;
@@ -247,5 +276,24 @@ body{
     justify-content: center;
     align-items: center;
   }
+  
+
+  /* footer */
+  .footer{
+    height: 1.3rem;
+  }
+  .footer ul{
+    gap: 8.8rem;
+  }
 }
-/* footer */
+
+/* 모바일 */
+@media screen and (max-width : 426px){
+  /* footer */
+  .footer{
+    height: 12.1rem;
+  }
+  .footer ul{
+    gap: 4rem;
+  }
+}

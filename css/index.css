@@ -101,13 +101,17 @@ legend {
 .hide {
   display: none !important;
 }
+.flex_sb{
+  display: flex;
+  justify-content: space-between;
+}
 
 /* 레이아웃 */
 body{
   padding-top: 9.1rem;
 }
 
-.main_container{
+.main_container_container{
   max-width: 144rem;
   margin: 0 auto;
 }
@@ -125,6 +129,7 @@ body{
   padding-left: 4.675rem;
   padding-right: 3.475rem;
   border-bottom: var(--point-color) 0.1rem solid;
+  background-color: var(--bg-color);
   z-index: 10;
 }
 
@@ -204,6 +209,72 @@ body{
   transform: translate(-50%, -50%);
 }
 
+/* main_container */
+.main_container{
+  display: flex;
+  flex-direction: column;
+  padding: 16rem 0;
+  gap: 32rem;
+}
+/* section-greeting */
+.section_greeting{
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 9.5rem;
+  width: 111rem;
+  height: 37.24rem;
+  border-radius: 4rem;
+  background-color: var(--text-color);
+  color: var(--bg-color);
+}
+.section_greeting em{
+  font-family: "MAZIUS REVIEW 20.09 Regular";
+  font-style: italic;
+  font-size: 3.6rem;
+}
+.section_greeting dl{
+  padding-bottom: 4.5rem;
+}
+.section_greeting dd{
+  font-size: 2rem;
+}
+.section_greeting ul{
+  display: flex;
+  gap: 2rem;
+}
+.section_greeting li{
+  width: 3.3rem;
+  height: 3.3rem;
+}
+.section_greeting li a{
+  display: block;
+  width: 3.3rem;
+  height: 3.3rem;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.section_greeting .link_github{
+  background-image: url("../img/Github.svg");
+}
+.section_greeting .link_mail{
+  background-image: url("../img/Mail.svg");
+}
+.section_greeting .link_phone{
+  background-image: url("../img/Phone.svg");
+}
+.section_greeting .link_view_project{
+  border-radius: 7.4rem;
+  width: 19rem;
+  height: 3.3rem;
+  line-height: 3.3rem;
+  text-align: center;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-size: 1.4rem;
+  font-family: "NeturalFace-Bold";
+}
+
 /* footer */
 .footer{
   border-top: 0.1rem solid var(--point-color);
@@ -222,6 +293,19 @@ body{
 
 /* Labtop */
 @media screen and (max-width : 1024px) {
+
+  /* main_container */
+  .main_container{
+    gap: 26rem;
+    padding: 13rem 0;
+  }
+  /* section_greeting */
+  .section_greeting{
+    width: 96rem;
+    height: 30.2rem;
+    padding: 7.5rem;
+  }
+
   /* footer */
   .footer ul{
     font-size: 1.6rem;
@@ -276,7 +360,18 @@ body{
     justify-content: center;
     align-items: center;
   }
-  
+
+  /* main_container */
+  .main_container{
+    gap: 10rem;
+    padding: 8.5rem 0;
+  }
+  /* section_greeting */
+  .section_greeting{
+    width: 68.9rem;
+    height: 29.2rem;
+    padding: 7rem;
+  }
 
   /* footer */
   .footer{
@@ -289,6 +384,24 @@ body{
 
 /* 모바일 */
 @media screen and (max-width : 426px){
+  /* main_container */
+  .main_container{
+    gap: 8.5rem;
+    padding: 2.6rem 0;
+  }
+  /* section_greeting */
+  .section_greeting{
+    width: 32.5rem;
+    height: 27rem;
+    padding: 2rem;
+  }
+  .section_greeting dl{
+    padding-bottom: 2rem;
+  }
+  .section_greeting ul{
+    gap: 1.6rem;
+    flex-wrap: wrap;
+  }
   /* footer */
   .footer{
     height: 12.1rem;

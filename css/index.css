@@ -295,5 +295,9 @@ body{
   }
   .footer ul{
     gap: 4rem;
+    font-size: 1.4rem;
+  }
+  .footer p{
+    font-size: 1.4rem;
   }
 }

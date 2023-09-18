@@ -275,6 +275,22 @@ body{
   font-family: "NeturalFace-Bold";
 }
 
+/* section_about */
+.section_about{
+  display: flex;
+  justify-content: center;
+}
+.section_about dt{
+  font-family: "MAZIUS REVIEW 20.09 Regular";
+  font-size: 3.6rem;
+  font-style: italic;
+}
+.section_about dd{
+  padding-left: 17.2rem;
+  width: 54rem;
+  white-space: break-all;
+}
+
 /* footer */
 .footer{
   border-top: 0.1rem solid var(--point-color);
@@ -304,6 +320,10 @@ body{
     width: 96rem;
     height: 30.2rem;
     padding: 7.5rem;
+  }
+  /* section_about */
+  .section_about dd{
+    width: 48.8rem;
   }
 
   /* footer */
@@ -402,6 +422,20 @@ body{
     gap: 1.6rem;
     flex-wrap: wrap;
   }
+
+  /* section_about */
+  .section_about dl{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .section_about dd{
+    width: 32.7rem;
+    padding-left: 0;
+    text-align: center;
+  }
+
   /* footer */
   .footer{
     height: 12.1rem;
